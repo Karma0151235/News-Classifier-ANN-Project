@@ -1,4 +1,33 @@
-📌 **Introduction**
-This GitHub repository contains the implementation and documentation for a computational intelligence project focused on detecting fake news using neural networks and proposing a hybrid intelligent system for improved classification. The project was developed as part of the CSC3034 Computational Intelligence course at the School of Engineering and Technology.
+# Fake News Detection using Neural Networks and Hybrid Intelligent Systems
 
-The system utilizes a Bidirectional LSTM neural network to classify news articles as either "real" or "fake" based on their textual content. The model achieves exceptional performance with 99% accuracy on a balanced dataset of 10,000 news articles (5,000 real and 5,000 fake). Additionally, we propose an Adaptive Neuro-Fuzzy Inference System (ANFIS) as a hybrid solution to address limitations of the pure neural network approach, particularly in handling ambiguous news articles.
+This project involves implementing a neural network to classify news articles as real or fake, along with proposing a hybrid intelligent system (ANFIS) to improve classification accuracy. The system is trained on a balanced dataset of 10,000 news articles (5,000 real and 5,000 fake) from Kaggle.
+
+## Overview
+
+The project focuses on building and evaluating a Bidirectional LSTM neural network for fake news detection, achieving 99% accuracy. It also proposes an Adaptive Neuro-Fuzzy Inference System (ANFIS) to handle ambiguous cases. Key components include:
+
+- Text preprocessing (tokenization, padding)
+- Neural network architecture (Embedding + BiLSTM + Dropout)
+- Performance evaluation (accuracy, precision, recall)
+- Hybrid system design (LSTM + Fuzzy Logic integration)
+
+## How To Run
+
+1. Clone the Repository 
+
+```
+git clone https://github.com/Karma151205/news-classifier-ANN-project.git
+cd news-classifier-ANN-project
+```
+
+2. Install Required Dependencies 
+
+```
+pip install -r requirements.txt
+```
+
+3. Run the Script 
+
+```
+python A2.py
+```
