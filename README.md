@@ -70,6 +70,8 @@ The model achieves:
 | F1-score      | 99%       | 99%       | 99%          |
 | Accuracy      |           |           | 99%          |
 
+View report for improved interpretability of results. 
+
 ## Visualizations
 **Model Accuracy/Loss**: Training vs validation curves <br/>
 **Confusion Matrix**: TP/TN/FP/FN distribution <br/>
