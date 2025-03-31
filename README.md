@@ -1,4 +1,4 @@
-📌 Introduction
+📌 **Introduction**
 This GitHub repository contains the implementation and documentation for a computational intelligence project focused on detecting fake news using neural networks and proposing a hybrid intelligent system for improved classification. The project was developed as part of the CSC3034 Computational Intelligence course at the School of Engineering and Technology.
 
 The system utilizes a Bidirectional LSTM neural network to classify news articles as either "real" or "fake" based on their textual content. The model achieves exceptional performance with 99% accuracy on a balanced dataset of 10,000 news articles (5,000 real and 5,000 fake). Additionally, we propose an Adaptive Neuro-Fuzzy Inference System (ANFIS) as a hybrid solution to address limitations of the pure neural network approach, particularly in handling ambiguous news articles.
