@@ -31,3 +31,53 @@ pip install -r requirements.txt
 ```
 python A2.py
 ```
+
+
+</br>
+Note: Download the dataset from [Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) and place it in the `data/` folder before execution.
+
+## Dataset 
+The dataset consists of two CSV files:
+- `True.csv`: 21,417 real news articles
+- `Fake.csv`: 23,502 fake news articles
+
+Each article contains:
+- `Title`: News headline
+- `Text`: Article content
+- `Subject`: Category (e.g., politics)
+- `Date`: Publication date
+
+Preprocessing steps include:
+1. Combining title and text
+2. Balancing classes (5,000 samples each)
+3. Tokenization and sequence padding (200 words)
+
+## Technologies Used
+
+**Python**: Primary implementation language <br/>
+**TensorFlow/Keras**: Neural network construction <br/>
+**Pandas/Numpy**: Data manipulation <br/>
+**Scikit-learn**: Evaluation metrics <br/>
+**Matplotlib/Seaborn**: Visualizations <br/>
+
+## Results
+The model achieves:
+
+| Metric        | Fake News | True News | Weighted Avg |
+|---------------|-----------|-----------|--------------|
+| Precision     | 98%       | 100%      | 99%          |
+| Recall        | 100%      | 98%       | 99%          |
+| F1-score      | 99%       | 99%       | 99%          |
+| Accuracy      |           |           | 99%          |
+
+## Visualizations
+**Model Accuracy/Loss**: Training vs validation curves <br/>
+**Confusion Matrix**: TP/TN/FP/FN distribution <br/>
+**ANFIS Architecture**: Hybrid system design schematic <br/>
+
+## Current Issues
+1. Handling ambiguous news articles
+2. Potential overfitting despite dropout layers
+3. Manual hyperparameter tuning limitations
+
+Next steps include implementing the proposed ANFIS hybrid system and automated hyperparameter optimization.
